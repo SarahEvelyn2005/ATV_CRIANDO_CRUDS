@@ -64,6 +64,7 @@ router.delete("/:id", (req, res) => {
   if (index === -1)
     return res.status(404).json({ error: "Aluno não encontrado" });
 
+  // alunos.splice(index, 1);
   alunos.splice(index, 1);
   res.json({ message: "Aluno deletado com sucesso" });
 });
